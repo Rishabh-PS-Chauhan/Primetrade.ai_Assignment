@@ -1,0 +1,28 @@
+POST /api/auth/register
+Request Body:
+{
+  "name": "Risha",
+  "email": "risha@test.com",
+  "password": "123456"
+}
+Response: 200 OK
+
+POST /api/auth/login
+Response:
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+
+GET /api/user/profile
+Authorization: Bearer <JWT>
+Response: 200 OK
+
+POST /api/tasks
+Body:
+{
+  "title": "BTC breakout at 42k"
+}
+Response: 200 OK
+
+DELETE /api/tasks/:id
+Response: 200 OK

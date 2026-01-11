@@ -1,0 +1,14 @@
+[2026-01-11 21:10:03] INFO  Server starting...
+[2026-01-11 21:10:04] INFO  MongoDB connected successfully
+[2026-01-11 21:10:04] INFO  Server running on port 5000
+
+[2026-01-11 21:12:18] INFO  POST /api/auth/register 200
+[2026-01-11 21:12:31] INFO  POST /api/auth/login 200
+[2026-01-11 21:12:31] INFO  JWT token issued for userId=65a1c92e3a4b9f0012a9a321
+
+[2026-01-11 21:13:10] INFO  GET /api/user/profile 200
+[2026-01-11 21:13:45] INFO  POST /api/tasks 200
+[2026-01-11 21:14:02] INFO  DELETE /api/tasks/65a1c9f23a4b9f0012a9a330 200
+
+[2026-01-11 21:15:20] INFO  PUT /api/user/profile 200
+[2026-01-11 21:16:02] INFO  PUT /api/user/change-password 200
