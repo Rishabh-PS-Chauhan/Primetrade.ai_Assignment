@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Scalable Web App API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth - Register",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/auth/register" },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"Test User\", \"email\": \"test@test.com\", \"password\": \"123456\" }"
+        }
+      }
+    },
+    {
+      "name": "Auth - Login",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": { "raw": "{{baseUrl}}/auth/login" },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\": \"test@test.com\", \"password\": \"123456\" }"
+        }
+      }
+    },
+    {
+      "name": "Get Tasks",
+      "request": {
+        "method": "GET",
+        "header": [{ "key": "Authorization", "value": "{{token}}" }],
+        "url": { "raw": "{{baseUrl}}/tasks" }
+      }
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Authorization", "value": "{{token}}" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": { "raw": "{{baseUrl}}/tasks" },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"title\": \"My Task\", \"completed\": false }"
+        }
+      }
+    },
+    {
+      "name": "Delete Task",
+      "request": {
+        "method": "DELETE",
+        "header": [{ "key": "Authorization", "value": "{{token}}" }],
+        "url": { "raw": "{{baseUrl}}/tasks/:id" }
+      }
+    }
+  ]
+}

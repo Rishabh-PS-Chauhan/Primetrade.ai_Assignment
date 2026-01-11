@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# environment variables
+.env
+
+# build output
+dist/
+
+# OS
+.DS_Store
+
+# logs (still tracked via LFS if committed)
+npm-debug.log*
