@@ -64,6 +64,18 @@ This project demonstrates:
 
 ---
 
+## 📝 Log Files
+
+A `logs/` directory is included with:
+- Backend server logs
+- Frontend interaction logs
+- API testing logs
+- Deployment readiness logs
+
+These demonstrate successful execution and integration of all core features.
+
+---
+
 ## 🗂 Project Structure
 
 ```text
